@@ -1,0 +1,1345 @@
+/* Font perso */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+/* General */
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    margin: 0 50px 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+}
+
+.euros {
+    font-weight: 600;
+}
+
+button {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+
+header {
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-left: 0px;
+}
+
+
+
+nav li a {
+    padding: 11px 25px 0 25px;
+}
+
+
+
+
+nav li a:hover {
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* Search bar */
+
+.search {
+    margin-bottom: 30px;
+}
+
+.search h2 {
+    margin-bottom: 10px;
+}
+
+.search p {
+    margin-top: 10px;
+}
+
+.searchBar {
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+.searchInput {
+    padding: 0 0 0 15px;
+    font-size: 110%;
+    font-weight: 600;
+    width: 230px;
+}
+
+.searchInput::placeholder {
+    color: #c2c2c2;
+}
+
+/*
+.searchButton {
+    width: 130px;
+    background-color: #0065FC;
+    border: none;
+    padding: 0;
+    border-radius: 0 15px 15px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 110%;
+    cursor: pointer;
+    flex-shrink: 0;
+}*/
+/*
+.searchButton {
+    width: 120px;
+    background-color: #0065FC;
+    border: none;
+    padding: 0;
+    border-radius: 0 15px 15px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 110%;
+    cursor: pointer;
+    flex-shrink: 0;
+    height: 50px;
+}
+
+*/
+
+.searchButton i {
+    display: none;
+}
+
+/*Info*/
+
+.info p {
+    margin-left: 1%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Hotels */
+
+.hotels, .mostPopular {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.hotels {
+    flex: 2;
+}
+
+/*Les h2 qui sont enfant de la classe hotel*/
+
+.hotels>h2 {
+    margin: 0;
+}
+
+.hotelsTab {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+    margin: 30px 0 50px;
+}
+
+.fa-star {
+    font-size: 80%;
+    letter-spacing: 2px;
+}
+
+.blueStar {
+    color: #0065FC;
+}
+
+.greyStar {
+    color: #d9d9d9;
+}
+
+.showMore {
+    font-weight: 700;
+    font-size: 120%;
+}
+
+/* Popular */
+
+.mostPopular {
+    flex: 1;
+    margin-left: 3%;
+}
+
+.mostPopularIcon {
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.mostPopularIcon h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.mostPopularIcon i {
+    font-size: 150%;
+}
+
+.mostPopularFrame {
+    width: 88%;
+    height: 145px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 30px;
+    box-shadow: 0 0 7px #c1c1c1;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.mostPopularFrame img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.mostPopularDescription {
+    flex: 1;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.hotelName {
+    margin: 0;
+    font-weight: 700;
+    font-size: 110%;
+}
+
+.mostPopularDescription .hotelName+p {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+/* Footer */
+
+footer {
+    padding: 40px 50px 50px;
+    background-color: #f2f2f2;
+}
+
+.about h3, .ourHotels h3, .assistance h3 {
+    margin: 5px 5px 5px 0px;
+    padding: 5px 5px 5px 0px;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer li {
+    margin-bottom: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*******************************************************************************/
+
+/*Change le style de la police de caractère*/
+
+p, li {
+    font-weight: normal;
+}
+
+header img {
+    width: 96px;
+    height: 45px;
+}
+
+/*Change la police de caractère dans le corps de la page*/
+
+body {
+    font-family: 'raleway', Arial, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 0;
+    /*Enlève les marges ext. du corps*/
+}
+
+/*Change p. de char. des inputs (barre de recherche + boutons)*/
+
+input {
+    font-family: 'raleway', Arial, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/*Pied de page*/
+
+
+
+/*Enlève la puce des listes à puces*/
+
+ul {
+    list-style-type: none;
+}
+
+/*Aligne le texte des listes à gauche*/
+
+li {
+    text-align: left;
+}
+
+/*Enlève les sous-lignes des liens HyperTexte*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Change l'apparence des liens HT après y avoir cliqué dessus*/
+
+a:visited {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/*Englobe <div class = "navIntroPage"> avec les <p> et les mets à droite*/
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    padding: 5px;
+
+}
+
+/*Donne un espace entre les mots*/
+
+#introPage li {
+    margin: 5px;
+    border: 1px hidden;
+}
+
+/*Met le texte en bleu + ajoute une bordure en haut du texte*/
+
+#introPage a:focus {
+    border-top: 1px #0065FC;
+    color: #0065FC;
+}
+
+/*Dispose la liste sur la navigation en ligne*/
+
+#introPage ul {
+    display: flex;
+}
+
+/*-----------------------------------------------Barre de recherche desktop --------------------------------------------*/
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.searchIcon {
+    height: 50px;
+    width: 50px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+    align-self: flex-start;
+}
+
+.searchInputButton {
+    height: 50px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    padding-left: 5px;
+}
+
+.searchButton {
+    width: 120px;
+    background-color: #0065FC;
+    border: none;
+    padding: 0;
+    border-radius: 0 15px 15px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 110%;
+    cursor: pointer;
+    flex-shrink: 0;
+    height: 50px;
+}
+
+.searchButton:hover {
+    background-color: #3586ff;
+}
+
+.searchButton:active {
+    background-color: #001ba4;
+}
+
+.containerAccomodation h2{
+    padding-top: 5%;
+    padding-left: 2%;
+}
+
+.glassButton {
+    display: none;
+}
+
+/*-----------------------Fin barre de recherche desktop----------------------------------------*/
+
+/*Rend la liste flex, PAR DEFAUT: justify-content: row;*/
+
+#filtres ul {
+    display: flex;
+}
+
+/*Les divs colonne alignent les texte à gauche*/
+
+.about li, .ourHotels li, .assistance li {
+    text-align: left;
+}
+
+.filter span {
+    padding-left: 12px;
+}
+
+/* à ajouter pour le footer */
+
+footer {
+    padding: 40px 50px 50px;
+    background-color: #f2f2f2;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer li {
+    margin-bottom: 15px;
+}
+
+
+
+/*fin changement pour footer*/
+
+header ul {
+    padding-left: 0%;
+}
+
+/*ajouter pour les filtres*/
+
+/* Filters */
+
+.textFilter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+    font-size: 110%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    border: 2px solid #d9d9d9;
+    ;
+    border-left: none;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+
+.filter span {
+    padding-left: 12px;
+}
+
+/*Change */
+
+.filter:hover, .showMore:hover {
+    cursor: pointer;
+    border-color: #0065FC;
+
+}
+
+.filter:hover i {
+    color: #deebff;
+}
+
+.filter:hover .iconFilter {
+    background-color: #0065FC;
+}
+
+.filter:active {
+    background-color: #deebff;
+    color: #0065FC;
+}
+
+.filterList {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.filterList span {
+    display: flex;
+    justify-content: center;
+}
+
+.iconFilter {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+}
+
+.iconFilter i {
+    margin: auto;
+    color: #0065FC;
+}
+
+.info {
+    margin-bottom: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+.iconInfo i {
+    width: auto;
+    height: auto;
+    font-size: 90%;
+    color: #0065FC;
+}
+
+.iconInfo i {
+    border: solid 1px #d9d9d9;
+    border-radius: 50%;
+    padding: 7px 11px 7px 11px;
+}
+
+/*fin pour filtre*/
+
+
+/*Cartes + populaires*/
+.popCard {
+    padding: 5px;
+    background-color: white;
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    /*padding: 5px 15px 5px 5px*/
+    box-shadow: 5px 5px 5px #e8e8e8, -5px 5px 5px #e8e8e8;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.popCard-img {
+    width: 40%;
+    margin-right: 5px;
+}
+
+.popCard-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.popCard-content {
+    display: flex;
+    flex-flow: column wrap;
+    width: 60%;
+    margin-left: 5px;
+
+}
+
+
+.content-label p {
+    line-height: 5px;
+}
+
+
+.content-notation {
+    margin-top: 25px;
+}
+
+.popCard:hover {
+    box-shadow: 5px 5px 5px #dddddd, -5px 5px 5px #dddddd;
+    color: #0065fc;
+    cursor: pointer;
+}
+
+.blocAccomodation a, .containerPopulaires a {
+    color: black;
+}
+
+
+/**-------------------------------------------Suite contenu du site---------------------------------------------*/
+
+/*Section*/
+
+section {
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.populaireIcon {
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.populaireIcon h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.populaireIcon i {
+    font-size: 25px;
+}
+
+.flex {
+    display: flex;
+}
+
+.containerAccomodation {
+    flex: 2;
+    background-color: #F2F2F2;
+    height: 600px;
+    border-radius: 15px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.containerPopulaires {
+    flex: 1;
+    background-color: #F2F2F2;
+    height: 600px;
+    border-radius: 15px;
+    margin-left: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.blocAccomodation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+}
+
+
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 90%;
+    height: 220px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #e8e8e8, -5px 5px 5px #e8e8e8;
+}
+
+.cardpop {
+    padding: 5px;
+    background-color: white;
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    /*padding: 5px 15px 5px 5px*/
+    box-shadow: 5px 5px 5px #e8e8e8, -5px 5px 5px #e8e8e8;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card-image {
+    height: 110px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.cardpop-image {
+    width: 40%;
+    height: 150px;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+}
+
+.card:hover {
+    color: #0065FC;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #dddddd, -5px 5px 5px #dddddd;
+}
+
+.cardpop :hover {
+    color: #0065FC;
+    cursor: pointer;
+}
+
+.containerAccomodation a:hover {
+    font-weight: 600;
+    color: #0065FC;
+}
+
+.blue {
+    color: #0065FC;
+}
+
+.grey {
+    color: #d9d9d9;
+}
+
+/*Activité*/
+
+.activite {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containerActivite {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.blocActivityOneColumn {
+    width: 23%;
+
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #e8e8e8, -5px 5px 5px #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blocActivityOneColumn:nth-child(1), .blocActivityOneColumn:nth-child(4) {
+    height: 100%;
+}
+
+.blocActivityOneColumn:nth-child(2) {
+    height: 60%;
+}
+
+.blocActivityOneColumn:nth-child(3) {
+    height: 35%;
+}
+
+.blocActivityOneColumn:nth-child(5) {
+    height: 40%;
+}
+
+.blocActivityOneColumn:nth-child(6) {
+    height: 55%;
+}
+
+
+
+
+.blocActivityTwoColumn {
+    width: 23%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.imageactivite1 {
+    width: 100%;
+    height: 90%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.imageactivite2 {
+    width: 100%;
+    height: 230px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.imageactivite3 {
+    width: 100%;
+    height: 230px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.cardactivite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.cardactivite.c1 {
+    flex: 6;
+}
+
+.cardactivite.c2 {
+    flex: 4;
+}
+
+.he {
+    height: 70px;
+}
+
+.titreactivite {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    width: 95%;
+    box-shadow: 5px 5px 5px #e8e8e8, -5px 5px 5px #e8e8e8;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.activityTitle {
+    width: 100%;
+}
+
+.cardactivite:hover {
+    color: #0065FC;
+    cursor: pointer;
+}
+
+.blocActivityOneColumn:hover {
+    color: #0065FC;
+    cursor: pointer;
+}
+
+
+
+
+/*-----------------------------------------------------------------Media Queries-----------------------------------------------------------------*/
+
+/*------------------Pour toutes le dimensions d'écran----------------------*/
+
+@media all {
+    .info p {
+        margin-left: 1%;
+    }
+
+    .info {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .main {
+        max-width: 1440px;
+    }
+}
+
+/*--------------------------Pour les petits écrans PC------------------------------------*/
+@media screen and (min-width: 992px) and (max-width: 1150px) {
+
+    .containerPopulaires {
+        margin-bottom: 20px;
+    }
+
+    .content-label p {
+        line-height: 16px;
+        margin: 0;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .hotelPopCards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content-notation {
+        margin-top: 5px;
+    }
+
+}
+
+
+
+/*------------------------------Changements pour tablettes-----------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    header h1, header p, .searchInput, .textFilter, .info, .containerHotels, .activity {
+        margin: 0px 22.5px 0px 22.5px;
+    }
+
+    #logoBooki {
+        margin-left: 5%;
+    }
+
+
+    #introPage {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    section {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .containerAccomodation {
+        margin: 15px;
+        border-radius: 15px 15px 15px 15px;
+        width: 97%;
+
+    }
+
+    .card {
+        width: 300px;
+    }
+
+
+
+    .containerPopulaires {
+        margin: 0px;
+        border-radius: 15px 15px 15px 15px;
+        width: 97%;
+    }
+
+
+    .containerActivite {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1px;
+    }
+
+    .imageactivite1 {
+        height: 550px;
+    }
+
+    .imageactivite2, .imageactivite3 {
+        height: 230px;
+
+    }
+
+    .blocActivityOneColumn {
+        width: 320px;
+
+        margin: 0 15px 30px 15px;
+    }
+
+    .blocActivityTwoColumn {
+        width: 49%;
+    }
+
+    .cardactivite:nth-last-child(1) {
+        margin-bottom: 30px;
+    }
+
+    .blocAccomodation {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+
+    #accomodations {
+        margin-left: 22.5px;
+        margin-right: 22.5px;
+    }
+
+    
+    .containerAccomodation h2{
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/*-----------------------Pour les écrans téléphones mobiles-----------------------*/
+
+@media only screen and (max-width: 768px) {
+    main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        margin: 0px -15px 0px -15px;
+    }
+
+
+    form {
+        margin-top: 15px;
+    }
+
+    #logoBooki {
+        margin-left: 55%;
+        margin-right: 45%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    nav ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        width: 50%;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    nav li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5px;
+        width: 100%;
+        border-bottom: 2px solid #d9d9d9;
+    }
+
+    nav li a:hover {
+        border-top: 0px;
+        border-bottom: 2px solid #034fc1;
+
+    }
+
+    #introPage ul {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    #introPage a {
+        padding-top: 0px;
+    }
+
+    .filter:nth-child(2) {
+        margin-left: 5px;
+    }
+
+
+    .activite {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+    /*---------------------Barre de recherche pour téléphone téléphone ----------------------------------------------------*/
+    .glassButton i {
+        display: flex;
+        justify-content: center;
+    }
+
+    .searchButton {
+        display: none;
+    }
+
+
+    .glassButton {
+        border: none;
+        background-color: #0065FC;
+        border-radius: 15px 15px 15px 15px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .glassButton i {
+        color: #ffffff;
+    }
+
+    .glassButton:hover {
+        background-color: #3586ff;
+    }
+
+    .glassButton:active {
+        background-color: #034fc1;
+    }
+
+    .search {
+        width: 330px;
+    }
+
+    /*-------------------------------Fin barre de recherche téléphone---------------------------------------------*/
+    header h1, header p, .searchInput, .textFilter, .info, #accomodations, .activity {
+        margin: 0px 22.5px 0px 22.5px;
+    }
+
+    header p {
+        margin-top: 3%;
+    }
+
+    .logoNav {
+        margin-bottom: 3%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    /*-------------------------------------------Contenu site pour téléphone mobile------------------------------*/
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .populaireIcon {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .containerAccomodation {
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+        height: auto;
+        margin: 0;
+        padding: 0px;
+        border-radius: 0;
+        background-color: #ffffff;
+    }
+
+    #accomodations, #activities {
+        margin: 10px 0px 0px 0px;
+    }
+
+    .blocAccomodation {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .containerPopulaires {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 0;
+        height: auto;
+        margin: 0 0 0 -5px;
+    }
+
+    .card {
+        width: 95%;
+        margin-left: 0px;
+    }
+
+    /*
+    .blocAccomodation, .blocPopulaire {
+        display: grid;
+        grid-template: 6fr / 1fr;
+        width: 100%;
+    }
+*/
+
+    /*
+    .imageactivite1 {
+        width: 100%;
+        height: 200px;
+        border-radius: 15px 15px 0 0;
+    }
+*/
+    .imageactivite2 {
+        width: 100%;
+        height: 200px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .imageactivite3 {
+        width: 100%;
+        height: 200px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .containerActivite {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1px;
+    }
+
+    .filter {
+        margin-left: 10px;
+    }
+
+    .blocActivityOneColumn {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 30px;
+
+    }
+
+
+
+    .blocActivityOneColumn:nth-child(1), .blocActivityOneColumn:nth-child(2), .blocActivityOneColumn:nth-child(3), .blocActivityOneColumn:nth-child(4), .blocActivityOneColumn:nth-child(5), .blocActivityOneColumn:nth-child(6) {
+        height: 250px;
+    }
+
+
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .blocActivityTwoColumn {
+        width: 100%;
+    }
+
+
+    .cardactivite {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 30px;
+        color: black;
+    }
+
+    .heightTitle {
+        height: auto;
+    }
+
+
+
+    /*-----------------------------------Fin contenu site pour téléphone mobile------------------------------------*/
+}
