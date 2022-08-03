@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 /* General */
 
+html{
+ scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
